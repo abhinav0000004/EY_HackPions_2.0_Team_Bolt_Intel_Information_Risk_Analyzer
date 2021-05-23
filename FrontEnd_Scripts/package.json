@@ -1,0 +1,26 @@
+{
+  "name": "intel-text-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahil101/intel-text-analyzer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahil101/intel-text-analyzer/issues"
+  },
+  "homepage": "https://github.com/sahil101/intel-text-analyzer#readme",
+  "dependencies": {
+    "aws-sdk": "^2.900.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7",
+    "puppeteer": "^9.1.1"
+  }
+}

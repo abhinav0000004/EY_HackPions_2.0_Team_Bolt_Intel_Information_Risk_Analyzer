@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            color: white;
+        }
+        li{
+            padding:5px;
+            list-style: none;
+        }
+        .scrape{
+   border:2px solid white;
+   border-radius: 5px;
+   
+ }
+    </style>
+</head>
+<body>
+    <ul>
+        <div class="scrape">
+            <p style="font-size: 25px; text-align: center;">Top Stories</p>
+        <% jsondata.forEach(function(item) { %>
+            <li><a href="<%=item.link%>"><%=item.title%></a></li>
+           
+        <%}); %>
+    </div>
+    </ul>
+</body>
+</html>

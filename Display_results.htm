@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="/style.css" rel="stylesheet" />
+
+    <title>Results</title>
+    <style>
+      .cell {
+        max-width: 80px; /* tweak me please */
+        white-space: nowrap;
+        overflow: hidden;
+      }
+
+      .expand-small-on-hover:hover {
+        max-width: 200px;
+        text-overflow: ellipsis;
+      }
+
+      .expand-maximum-on-hover:hover {
+        max-width: initial;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand mb-0 h1" href="#"
+          ><img src="EY.png" alt="" width="50" height="40" />&nbsp;&nbsp;Intel
+          Text Analyzer</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.htm">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/Display_results.htm">Results</a>
+            </li>
+
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="/dashboard.htm">Dashboard</a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- // Main content -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-4">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"
+              >Number of office %</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              placeholder="0.2 default weightage"
+              aria-describedby="basic-addon1"
+              value=""
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Head Count %</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="0.2 default weightage"
+              aria-describedby="basic-addon1"
+              value=""
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"
+              >Number of Incident %</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              placeholder="0.2 default weightage"
+              aria-describedby="basic-addon1"
+              value=""
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"
+              >Client Presence %</span
+            >
+            <input
+              type="text"
+              class="form-control"
+              placeholder="0.2 default weightagee"
+              aria-describedby="basic-addon1"
+              value=""
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Severity %</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="0.2 default weightage"
+              aria-describedby="basic-addon1"
+              value=""
+            />
+          </div>
+        </div>
+        <div class="col-4">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+            onclick="execute()"
+          >
+            Update Risk Score
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Date & Time</th>
+          <th scope="col">Title</th>
+          <!-- <th scope="col">Description</th> -->
+          <th scope="col">Country</th>
+          <th scope="col">Risk Category</th>
+          <th scope="col">Severity</th>
+          <th scope="col">Office Impacted</th>
+          <th scope="col">Employees</th>
+          <th scope="col">Current Travellers</th>
+          <th scope="col">Expected Travellers</th>
+          <th scope="col">Risk Score</th>
+          <th scope="col">Impact Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- <tr>
+          <th scope="row">1</th>
+          <td class="cell expand-maximum-on-hover">Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td colspan="2">Larry the Bird</td>
+          <td>@twitter</td>
+        </tr> -->
+      </tbody>
+    </table>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that yo u want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAa77WeqmETpYca_CQ875BrfnrOjaXI7j4",
+        authDomain: "intel-text-analyzer.firebaseapp.com",
+        projectId: "intel-text-analyzer",
+        storageBucket: "intel-text-analyzer.appspot.com",
+        messagingSenderId: "169671265945",
+        appId: "1:169671265945:web:d4f61863d53b214e6cb208",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="load_results.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
