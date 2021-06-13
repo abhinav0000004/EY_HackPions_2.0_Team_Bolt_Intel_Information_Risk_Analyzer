@@ -43,3 +43,5 @@ Upload Input|  Table contains all the information related to mail
  Dashboard|  Intelligent Information Hub
 :-------------------------:|:-------------------------:
 ![](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/blob/main/Screenshots/Dashboard.jpeg)  |  ![](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/blob/main/Screenshots/IntelligentHub.jpeg)
+
+## Front-End code is not not uploaded on the github repo which contains sensitive data.
