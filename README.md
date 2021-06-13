@@ -35,4 +35,9 @@ While there are other scripts as well for [newsScrapping](https://github.com/abh
 ## Screenshot from website
 Upload Input|  Table contains all the information related to mail
 :-------------------------:|:-------------------------:
-![](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/blob/main/Screenshots/Screenshot%20(31).png)  |  ![](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/blob/main/Screenshots/Screenshot%20(32).png)
+![](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/blob/main/Screenshots/Input.png)  |  ![](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/blob/main/Screenshots/Table.jpeg)
+
+
+ Dashboard|  Intelligent Information Hub
+:-------------------------:|:-------------------------:
+![](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/blob/main/Screenshots/Dashboard.jpeg)  |  ![](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/blob/main/Screenshots/IntelligentHub.jpeg)
