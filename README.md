@@ -18,6 +18,7 @@ This data is received from EY which contains geographical details various about 
 4.   **Risk Score** contains preprocessed details about various factors used to calculate Risk Score.
 5.   **Severity** contains mapping of various risk with countries which gives us severity of a particular risk in a country.
 6.    **Travellers** contains infromation about current travellers to the particular country.
+7.        **Inflation** contains infromation about past impact score average category wise to the particular country.
 ## Technology Stack
 As a part of our tech stack we hae used -
 * **PYPDF2** python library for extracting text from PDF.
@@ -28,7 +29,8 @@ As a part of our tech stack we hae used -
 ## Flow of the Project
 ![](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/blob/main/Screenshots/Flow.PNG)
 
-### This [Ipynb](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/blob/main/impactAnalysis.ipynb) contains the entire code to extract all the infromation from the mail along with the prediction of the kind of risk associated with the mail, factors which helps in calculating the risk score and Impact score.
+### This [Ipynb](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/blob/main/impactAnalysis%20.ipynb) contains the entire code to extract all the infromation from the mail along with the prediction of the kind of risk associated with the mail, factors which helps in calculating the risk score and Impact score.
+While there are other scripts as well for [newsScrapping](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/blob/main/news_Scrapping.ipynb) and [incidentForcasting](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/blob/main/forecast.ipynb)
 
 ## Screenshot from website
 Upload Input|  Table contains all the information related to mail
