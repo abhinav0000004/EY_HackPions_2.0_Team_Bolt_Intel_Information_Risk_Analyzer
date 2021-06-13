@@ -10,6 +10,8 @@ This folder contains various mails received from various sources regarding diffe
 * PDF of the mail
 * Text file of the mail
 * Text copied from mail directly.
+
+Important : Dataset is removed from this repo because of confidentiality .
 ### Supporting Data
 This data is received from EY which contains geographical details various about EY offices as well as details on various sort of risks.These are the excel files in the [Supporting data](https://github.com/abhinav0000004/EY_HackPions_2.0_Team_Bolt_Intel_Information_Risk_Analyzer/tree/main/Supporting%20Data) folder.
 1. **Baseline** contains baseline score country wise which is an important factore to find inpct score.
