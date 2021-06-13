@@ -18,7 +18,7 @@ This data is received from EY which contains geographical details various about 
 4.   **Risk Score** contains preprocessed details about various factors used to calculate Risk Score.
 5.   **Severity** contains mapping of various risk with countries which gives us severity of a particular risk in a country.
 6.    **Travellers** contains infromation about current travellers to the particular country.
-7.        **Inflation** contains infromation about past impact score average category wise to the particular country.
+7.    **Inflation** contains infromation about past impact score average category wise to the particular country.
 ## Technology Stack
 As a part of our tech stack we hae used -
 * **PYPDF2** python library for extracting text from PDF.
